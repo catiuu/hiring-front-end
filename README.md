@@ -1,51 +1,62 @@
+# Objetivo:
 
-## Objetivo
-Construir uma aplicação web em ReactJS que tenha o comportamento de um e-commerce.
+Desafio técnico front-end com objetivo de construir uma aplicação web em ReactJS que tenha o comportamento de um e-commerce.
+O projeto pode ser visualisado [aqui](https://we-shop-pi.vercel.app/).
 
-## Como começar
-Dar um fork no projeto, clonar o repositório em sua máquina local e criar um branch novo para o seu código.
+# Tecnologias Usadas:
 
+• ReactJS
 
-## Regras de negócio
-•	Ao acessar a home, trazer a listagem de produtos vinda da API de referência.  
+• Bootstarp 5
 
-•	Ao digitar no campo de busca, deve-se trazer somente os resultados digitados.  
+# Pré-requisitos:
 
-•	Ao clicar no botão "Adicionar ao carrinho", deve-se inserir o produto ao carrinho de compras.  
+• Node.js (versão 20.15.1)
 
-•	No carrinho de compras, pode-se remover os produtos.  
+Para verificar se o Node.js está instalado corretamente, execute:
 
-•	No carrinho de compras, deve-se informar o total da compra.
+```bash
+node -v
+```
 
+• Gerenciador de pacotes npm
 
-## Referências
-•	API de produtos: https://62d742f351e6e8f06f1a83da.mockapi.io/api/produtos
+# Como executar o projeto:
 
+Clone o repositório:
 
-## Observações
-1. Não é necessário se preocupar com CORS ou implementar um backend para fazer as requisições. A API de produtos permite chamadas diretas do navegador.
+```bash
+git clone git@github.com:catiuu/hiring-front-end.git
+```
 
-2. Design de livre escolha.
+Navegue até o diretório do projeto:
 
+```bash
+cd weShop
+```
 
-## Requisitos Técnicos para a entrega do teste
+Instale as dependencias do projeto:
 
-•	Pode utilizar qualquer library de CSS e CSS-in-JS. (recomendamos Material UI, Bootstrap ou Styled Components. Pode fazer com CSS clássico também)
+```bash
+npm install
+```
 
-•	O projeto deve ter uma documentação em readme ensinando a: 
-1. instalar o projeto na máquina (engines, versão de node, qual gerenciador de pacote usar)
-2. instalar as dependências do projeto
-3. rodar o ambiente de desenvolvimento
-4. rodar a build de deploy da aplicação.
+Inicie o servidor de desenvolvimento:
 
-•	Pode utilizar tanto o Axios quanto ou Fetch para requisições.
+```bash
+npm run dev
+```
 
-•	Hospedar o projeto em um servidor (Heroku, Vercel, Netlify)
+Após isso, o servidor de desenvolvimento será iniciado e você poderá acessar a aplicação no navegador em http://localhost:3000.
 
-## Diferenciais técnicos
+# Rodar a build de produção:
 
-•	Utilização de typescript
+Para criar a versão otimizada para produção, execute o comando:
 
-•	Bom uso de context api ou outro gerenciamento de estados
+```bash
+npm run build
+```
 
-Boa sorte!
+Isso gerará uma pasta chamada build/ com todos os arquivos necessários para o deploy da aplicação.
+
+O deploy do projeto pode ser visualizado [aqui](https://we-shop-pi.vercel.app/).
